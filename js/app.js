@@ -24,7 +24,7 @@ require(
 
     function init()
     {
-      console.log( "=== init ===" );
+      // console.log( "=== init ===" );
       var config = {
         signals: {
           'open'             : new Signal(),

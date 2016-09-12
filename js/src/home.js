@@ -9,7 +9,7 @@ define(
 
     function init( shared )
     {
-      console.log( " === home ===" );
+      // console.log( " === home ===" );
       signals = shared.signals;
 
       _getCharacters();
@@ -29,7 +29,7 @@ define(
     function _update( $characters )
     {
       var mode = document.designMode;
-      console.log( "mode", mode );
+      // console.log( "mode", mode );
       // document.designMode = "on";
       // document.designMode = "off";
 
