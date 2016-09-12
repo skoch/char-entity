@@ -43,9 +43,9 @@ Please refer to `scss/config.rb` if you need to change anything about the config
 
 ###To build for production
 #### Compress CSS
-`compass compile --output-style compressed --environment production --force`
+`cd scss && compass compile --output-style compressed --environment production --force && cd ..`
 #### Compile Javascript to one file
-`node r.js -o build.js paths.requireLib=require include=requireLib`
+`cd js && node r.js -o build.js paths.requireLib=require include=requireLib && cd ..`
 #### Update `IS_DEV` to `false` in `index.php`.
 
 # Start
