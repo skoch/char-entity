@@ -1,7 +1,7 @@
 <?php
 
 date_default_timezone_set( 'America/New_York' );
-define( 'IS_DEV', false );
+define( 'IS_DEV', true );
 
 require 'vendor/autoload.php';
 
