@@ -1,5 +1,9 @@
-# project-name
-Brief description of project
+# Character Entity Reference Chart
+You know when you need the HTML code for a character? (eg: :copyright:) Well, you could go [here](https://dev.w3.org/html5/html-author/charref) and search the page, or you could use this!
+
+Click to direcly copy to clipboard (Chrome) or if not Chrome, it should highlight so you can copy using your keyboard.
+
+Search for anything. Type `clear` or `all` to show all characters.
 
 # Dependencies
 ## PHP
@@ -43,9 +47,9 @@ Please refer to `scss/config.rb` if you need to change anything about the config
 
 ###To build for production
 #### Compress CSS
-`compass compile --output-style compressed --environment production --force`
+`cd scss && compass compile --output-style compressed --environment production --force && cd ..`
 #### Compile Javascript to one file
-`node r.js -o build.js paths.requireLib=require include=requireLib`
+`cd js && node r.js -o build.js paths.requireLib=require include=requireLib && cd ..`
 #### Update `IS_DEV` to `false` in `index.php`.
 
 # Start

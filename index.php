@@ -1,6 +1,7 @@
 <?php
 
-define( 'IS_DEV', true );
+date_default_timezone_set( 'America/New_York' );
+define( 'IS_DEV', false );
 
 require 'vendor/autoload.php';
 
@@ -18,6 +19,7 @@ $app->get( '/', function() use ( $app )
   $app->render( 'home.twig', array(
     'title' => $title,
     'body_class' => $body_class,
+    'year' => date( "Y" ),
     'is_dev' => IS_DEV,
   ));
 });

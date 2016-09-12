@@ -1,2 +1,10 @@
-$black: #000;
-$white: #fff;
+$black: #000000;
+// $black: #363736;
+
+// from darkest to lightest
+$grey-300: #E0E0E0;
+$grey-100: #F5F5F5;
+$grey-50: #FAFAFA;
+$white: #FFFFFF;
+
+$hint-text: rgba( $black, .38 );
