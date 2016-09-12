@@ -1,0 +1,10 @@
+  <footer>Footer</footer>
+
+{% if not is_dev %}
+  <script src="js/app-built.js"></script>
+{% else %}
+  <script data-main="js/app" src="js/require.js"></script>
+{% endif %}
+
+  </body>
+</html>
