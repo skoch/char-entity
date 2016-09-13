@@ -11,7 +11,7 @@ define(
 
       $( '.instructions-button' ).click( _open );
       $( '.md-close' ).click( _close );
-      // $( '.md-overlay' ).click( _close );
+      $( '.md-overlay' ).click( _close );
     }
 
     function _open( $evt )
