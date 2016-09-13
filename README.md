@@ -1,7 +1,7 @@
 # Character Entity Reference Chart
 You know when you need the HTML code for a character? (eg: :copyright:) Well, you could go [here](https://dev.w3.org/html5/html-author/charref) and search the page, or you could use this!
 
-Click to direcly copy to clipboard (Chrome) or if not Chrome, it should highlight so you can copy using your keyboard.
+Click to directly copy to clipboard (Chrome) or if not Chrome, it should highlight so you can copy using your keyboard.
 
 Search for anything. Type `clear` or `all` to show all characters.
 

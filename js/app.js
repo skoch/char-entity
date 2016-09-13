@@ -11,11 +11,13 @@ require.config({
 require(
   [
     'src/home',
+    'components/instructions',
     'signal',
     'jquery'
   ],
   function(
     home,
+    instructions,
     Signal,
     $
   )
@@ -36,6 +38,7 @@ require(
 
       // sk: initialize all main modules. add config object.
       home.init( config );
+      instructions.init( config );
 
       // _onDomReady();
     }

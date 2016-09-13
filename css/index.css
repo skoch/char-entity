@@ -444,7 +444,7 @@ textarea {
   /* 2 */
 }
 
-/* line 1, ../scss/_global.scss */
+/* line 3, ../scss/_global.scss */
 html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -454,30 +454,30 @@ html, body {
   background: #FAFAFA;
 }
 
-/* line 9, ../scss/_global.scss */
+/* line 11, ../scss/_global.scss */
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-/* line 13, ../scss/_global.scss */
+/* line 15, ../scss/_global.scss */
 textarea:focus,
 input:focus {
   outline: none;
 }
 
-/* line 18, ../scss/_global.scss */
+/* line 20, ../scss/_global.scss */
 img {
   max-width: 100%;
 }
 
-/* line 23, ../scss/_global.scss */
+/* line 25, ../scss/_global.scss */
 img.responsive-img,
 video.responsive-video {
   max-width: 100%;
   height: auto;
 }
 
-/* line 29, ../scss/_global.scss */
+/* line 31, ../scss/_global.scss */
 .fade {
   -webkit-transition: opacity 0.3s ease-out, transform 0.3s ease-out;
   -moz-transition: opacity 0.3s ease-out, transform 0.3s ease-out;
@@ -487,13 +487,13 @@ video.responsive-video {
   opacity: 0;
   transform: translateY(10px);
 }
-/* line 35, ../scss/_global.scss */
+/* line 37, ../scss/_global.scss */
 .fade.in {
   transform: translateY(0);
   opacity: 1;
 }
 
-/* line 42, ../scss/_global.scss */
+/* line 44, ../scss/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -501,11 +501,11 @@ video.responsive-video {
   height: 0;
   overflow: hidden;
 }
-/* line 48, ../scss/_global.scss */
+/* line 50, ../scss/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 52, ../scss/_global.scss */
+/* line 54, ../scss/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -514,13 +514,25 @@ video.responsive-video {
   height: 100%;
 }
 
-/* line 65, ../scss/_global.scss */
+/* line 67, ../scss/_global.scss */
+.instructions-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/* line 74, ../scss/_global.scss */
+.instructions-button svg path {
+  fill: #9E9D24;
+}
+
+/* line 81, ../scss/_global.scss */
 #templates {
   visibility: hidden;
   display: none;
 }
 
-/* line 70, ../scss/_global.scss */
+/* line 86, ../scss/_global.scss */
 .top,
 .search-macro {
   display: flex;
@@ -529,8 +541,9 @@ video.responsive-video {
   text-align: center;
 }
 
-/* line 85, ../scss/_global.scss */
+/* line 101, ../scss/_global.scss */
 .search-macro input {
+  border-radius: 2px;
   width: 50%;
   padding: 10px;
   background-color: #F5F5F5;
@@ -539,7 +552,7 @@ video.responsive-video {
   border: none;
 }
 
-/* line 98, ../scss/_global.scss */
+/* line 115, ../scss/_global.scss */
 .search-results-macro,
 .characters-macro {
   display: flex;
@@ -549,7 +562,7 @@ video.responsive-video {
   padding: 20px 40px;
 }
 
-/* line 112, ../scss/_global.scss */
+/* line 129, ../scss/_global.scss */
 .character {
   padding: 10px;
   font-family: "Georgia", "Apple Symbols", serif;
@@ -557,8 +570,9 @@ video.responsive-video {
   text-align: center;
 }
 
-/* line 120, ../scss/_global.scss */
+/* line 137, ../scss/_global.scss */
 .character-macro {
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   width: 20%;
@@ -567,7 +581,7 @@ video.responsive-video {
   background-color: #FFFFFF;
   cursor: pointer;
 }
-/* line 131, ../scss/_global.scss */
+/* line 149, ../scss/_global.scss */
 .character-macro .character-micro {
   display: flex;
   align-items: center;
@@ -575,11 +589,11 @@ video.responsive-video {
   flex-direction: column;
   width: 100%;
 }
-/* line 140, ../scss/_global.scss */
+/* line 158, ../scss/_global.scss */
 .character-macro .character-micro .desc {
   text-align: center;
 }
-/* line 143, ../scss/_global.scss */
+/* line 161, ../scss/_global.scss */
 .character-macro .character-micro .code {
   font-size: 18px;
   font-family: Monaco, monospace;
@@ -587,16 +601,17 @@ video.responsive-video {
   background-color: #F5F5F5;
   border: 5px solid #FFFFFF;
   border-top: none;
+  border-radius: 2px;
   width: 100%;
   text-align: center;
   cursor: pointer;
 }
-/* line 155, ../scss/_global.scss */
+/* line 174, ../scss/_global.scss */
 .character-macro .character-micro .code:selection {
   background-color: #FFFFFF;
 }
 
-/* line 173, ../scss/_global.scss */
+/* line 192, ../scss/_global.scss */
 input {
   -webkit-transition: background-color 0.1s ease-out;
   -moz-transition: background-color 0.1s ease-out;
@@ -605,24 +620,24 @@ input {
   transition: background-color 0.1s ease-out;
 }
 
-/* line 177, ../scss/_global.scss */
+/* line 196, ../scss/_global.scss */
 .hoverable {
   transition: box-shadow .25s;
   box-shadow: 0;
 }
 
-/* line 182, ../scss/_global.scss */
+/* line 201, ../scss/_global.scss */
 .hoverable:hover {
   transition: box-shadow .25s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 187, ../scss/_global.scss */
+/* line 206, ../scss/_global.scss */
 .oops {
   font-size: 28px;
 }
 
-/* line 190, ../scss/_global.scss */
+/* line 209, ../scss/_global.scss */
 footer {
   display: flex;
   align-items: center;
@@ -630,58 +645,230 @@ footer {
   padding: 10px 0;
 }
 
-/* line 197, ../scss/_global.scss */
+/* line 216, ../scss/_global.scss */
 .is-hidden {
   display: none;
 }
 
 @media (max-width: 1400px) {
-  /* line 202, ../scss/_global.scss */
+  /* line 221, ../scss/_global.scss */
   .character-macro {
     width: 25%;
   }
 }
 @media (max-width: 768px) {
-  /* line 207, ../scss/_global.scss */
+  /* line 226, ../scss/_global.scss */
   .characters-macro {
     padding: 20px 0;
   }
 
-  /* line 210, ../scss/_global.scss */
+  /* line 229, ../scss/_global.scss */
   .character-macro {
     width: 33.333%;
   }
 
-  /* line 214, ../scss/_global.scss */
+  /* line 233, ../scss/_global.scss */
   input.search {
     width: 80%;
   }
 }
 @media (max-width: 540px) {
-  /* line 220, ../scss/_global.scss */
+  /* line 239, ../scss/_global.scss */
   .character-macro {
     width: 50%;
   }
 }
 @media (max-width: 414px) {
-  /* line 226, ../scss/_global.scss */
+  /* line 245, ../scss/_global.scss */
   .character-macro {
     width: 100%;
     height: 170px;
   }
 
-  /* line 231, ../scss/_global.scss */
+  /* line 250, ../scss/_global.scss */
   .character {
     font-size: 50px;
   }
 
-  /* line 235, ../scss/_global.scss */
+  /* line 254, ../scss/_global.scss */
   .search-macro {
     padding: 0 5px;
   }
 
-  /* line 239, ../scss/_global.scss */
+  /* line 258, ../scss/_global.scss */
   input.search {
     width: 100%;
   }
+}
+/* General styles for the modal */
+/*
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the
+perspective effects (not including the modals and the overlay).
+*/
+/* line 27, ../scss/components/_modal.scss */
+.md-hide-body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* line 32, ../scss/components/_modal.scss */
+.md-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 51, ../scss/components/_modal.scss */
+.md-show {
+  visibility: visible;
+}
+
+/* line 55, ../scss/components/_modal.scss */
+.md-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(250, 250, 250, 0.8);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 73, ../scss/components/_modal.scss */
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content styles */
+/* line 79, ../scss/components/_modal.scss */
+.md-content {
+  background: #e74c3c;
+  position: relative;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* line 87, ../scss/components/_modal.scss */
+.md-content h3,
+.md-content h4 {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px 2px 0 0;
+}
+
+/* line 100, ../scss/components/_modal.scss */
+.md-content h4 {
+  font-size: 28px;
+}
+
+/* line 103, ../scss/components/_modal.scss */
+.md-content span {
+  font-weight: 700;
+}
+
+/* line 106, ../scss/components/_modal.scss */
+.md-content code {
+  padding: 5px;
+  border-radius: 2px;
+  background: #9E9D24;
+}
+
+/* line 111, ../scss/components/_modal.scss */
+.md-content a {
+  color: #9E9D24;
+  text-decoration: none;
+}
+
+/* line 116, ../scss/components/_modal.scss */
+.md-content > div {
+  padding: 15px 40px;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* line 125, ../scss/components/_modal.scss */
+.md-content > div p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* line 130, ../scss/components/_modal.scss */
+.md-content > div ul {
+  padding: 0 0 30px 20px;
+}
+
+/* line 135, ../scss/components/_modal.scss */
+.md-content > div ul li {
+  padding: 5px 0;
+}
+
+/* line 139, ../scss/components/_modal.scss */
+.md-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/* line 146, ../scss/components/_modal.scss */
+.md-close svg path {
+  fill: #9E9D24;
+}
+
+/* Individual modal styles with animations/transitions */
+/* Effect 12:  Just me */
+/* line 183, ../scss/components/_modal.scss */
+.md-effect-12 .md-content {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 194, ../scss/components/_modal.scss */
+.md-show.md-effect-12 ~ .md-overlay {
+  background: #FAFAFA;
+}
+
+/* line 198, ../scss/components/_modal.scss */
+.md-effect-12 .md-content h3,
+.md-effect-12 .md-content h4,
+.md-effect-12 .md-content {
+  background: transparent;
+}
+
+/* line 204, ../scss/components/_modal.scss */
+.md-show.md-effect-12 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
 }

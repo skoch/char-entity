@@ -1,3 +1,5 @@
+$border-radius: 2px;
+
 html, body {
   @include font-smoothing;
   font-family: Oswald;
@@ -62,6 +64,20 @@ video.responsive-video {
 
 }
 
+.instructions-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+  svg {
+    path {
+      fill: $highlight-1;
+    }
+  }
+
+}
+
 #templates {
   visibility: hidden;
   display: none;
@@ -84,6 +100,7 @@ video.responsive-video {
 .search-macro {
   input {
     // display: block;
+    border-radius: $border-radius;
     width: 50%;
     // margin: 0 auto;
     padding: 10px;
@@ -118,6 +135,7 @@ video.responsive-video {
 }
 
 .character-macro {
+  border-radius: $border-radius;
   display: flex;
   justify-content: center;
   // flex-direction: column;
@@ -148,6 +166,7 @@ video.responsive-video {
       // border: none;
       border: 5px solid $white;
       border-top: none;
+      border-radius: $border-radius;
       width: 100%;
       text-align: center;
       cursor: pointer;

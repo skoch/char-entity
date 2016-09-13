@@ -1,6 +1,29 @@
 {% include "components/header.twig" %}
 
+<div class="md-modal md-effect-12" id="modal-12">
+  <div class="md-content">
+    <h3>What is this?</h3>
+    <div>
+      <p>You know when you need the HTML code for a character? (eg: &copy;)</p>
+      <p>Well, you could go <a href="https://dev.w3.org/html5/html-author/charref">here</a> and search the page&hellip;</p>
+      <p>&hellip;or you could use this tool!</p>
+      <ul>
+        <li><span>Click</span> to directly copy to clipboard (Chrome) or (if not Chrome), it should highlight so you can copy using your keyboard.</li>
+        <li><span>Search</span> for anything. Type <code>clear</code> or <code>all</code> to show all characters.</li>
+      </ul>
+    </div>
+    <h4>&tcy;&hcirc;&acy;&ncedil;&kgreen;&oS;</h4>
+  </div>
+</div>
+
 <div class="container">
+
+  <div class="instructions-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+    </svg>
+  </div>
+
   <div class="top">
     <h1 class="title">Character Entity Reference Chart</h1>
   </div>
@@ -12,6 +35,14 @@
   <div class="characters-macro"></div>
   <div class="search-results-macro"></div>
 
+</div>
+
+<div class="md-overlay">
+  <div class="md-close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/>
+    </svg>
+  </div>
 </div>
 
 <div id="templates">
