@@ -19,7 +19,7 @@ $app->get( '/', function() use ( $app )
   $app->render( 'home.twig', array(
     'title' => $title,
     'body_class' => $body_class,
-    'year' => date( "Y" ),
+    'year' => '2016',
     'is_dev' => IS_DEV,
   ));
 });
