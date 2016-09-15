@@ -39,6 +39,20 @@ video.responsive-video {
     opacity: 1;
   }
 }
+.fade-out {
+  @include transition( opacity 0.3s ease-out, transform 0.3s ease-out );
+  opacity: 1;
+  transform: translateY( 0 );
+
+  &.out {
+    transform: translateY( 10px );
+    opacity: 0;
+  }
+}
+
+.no-display {
+  display: none !important;
+}
 
 // Responsive Videos
 .video-container {
