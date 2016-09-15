@@ -11,16 +11,19 @@ require.config({
 require(
   [
     'src/home',
+    'components/instructions',
     'signal',
     'jquery'
   ],
   function(
     home,
+    instructions,
     Signal,
     $
   )
   {
     $( document ).ready( init );
+    var transitions = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd';
 
     function init()
     {
@@ -34,15 +37,35 @@ require(
 
       config.signals['dom-ready'].add( _onDomReady );
 
+      $( '.loader' ).addClass( 'in' );
+
       // sk: initialize all main modules. add config object.
       home.init( config );
+      instructions.init( config );
 
       // _onDomReady();
+
     }
 
     function _onDomReady()
     {
-      $( 'body' ).addClass( 'in' );
+      var target = $( '.loader' );
+      target.on( transitions, _ready );
+      target.removeClass( 'in' );
+
+      // $( '.loader' ).removeClass( 'in' );
+      // $( '.container' ).addClass( 'in' );
+    }
+
+    function _ready( $evt )
+    {
+      $( '.loader' ).off( transitions, _ready );
+      $( '.loader' ).addClass( 'hidden' );
+      $( 'body' ).removeClass( 'md-hide-body' );
+      $( '.container, footer' ).removeClass( 'no-display' );
+      setTimeout( function(){
+        $( '.container' ).addClass( 'in' );
+      }, 300 );
     }
   }
 );

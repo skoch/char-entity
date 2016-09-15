@@ -14,12 +14,12 @@ $app = new \Slim\Slim(
 
 $app->get( '/', function() use ( $app )
 {
-  $title = "Home";
-  $body_class = "home fade";
+  $title = "Character Entity Reference Chart";
+  $body_class = "home md-hide-body";
   $app->render( 'home.twig', array(
     'title' => $title,
     'body_class' => $body_class,
-    'year' => date( "Y" ),
+    'year' => '2016',
     'is_dev' => IS_DEV,
   ));
 });

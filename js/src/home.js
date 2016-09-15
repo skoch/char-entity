@@ -59,7 +59,9 @@ define(
       $( '.character-macro' ).click( _copy );
       searchInput.focus();
 
-      signals['dom-ready'].dispatch();
+      setTimeout( function(){
+        signals['dom-ready'].dispatch();
+      }, 1000 );
     }
 
     function _copy( $evt )
