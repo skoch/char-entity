@@ -1,7 +1,7 @@
 <?php
 
 date_default_timezone_set( 'America/New_York' );
-define( 'IS_DEV', true );
+define( 'IS_DEV', false );
 
 require 'vendor/autoload.php';
 
@@ -14,7 +14,7 @@ $app = new \Slim\Slim(
 
 $app->get( '/', function() use ( $app )
 {
-  $title = "Home";
+  $title = "Character Entity Reference Chart";
   $body_class = "home md-hide-body";
   $app->render( 'home.twig', array(
     'title' => $title,
