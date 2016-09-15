@@ -15,7 +15,7 @@ $app = new \Slim\Slim(
 $app->get( '/', function() use ( $app )
 {
   $title = "Home";
-  $body_class = "home fade";
+  $body_class = "home md-hide-body";
   $app->render( 'home.twig', array(
     'title' => $title,
     'body_class' => $body_class,

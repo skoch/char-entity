@@ -493,7 +493,28 @@ video.responsive-video {
   opacity: 1;
 }
 
-/* line 44, ../scss/_global.scss */
+/* line 42, ../scss/_global.scss */
+.fade-out {
+  -webkit-transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+/* line 47, ../scss/_global.scss */
+.fade-out.out {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+/* line 53, ../scss/_global.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 58, ../scss/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -501,11 +522,11 @@ video.responsive-video {
   height: 0;
   overflow: hidden;
 }
-/* line 50, ../scss/_global.scss */
+/* line 64, ../scss/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 54, ../scss/_global.scss */
+/* line 68, ../scss/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -514,25 +535,25 @@ video.responsive-video {
   height: 100%;
 }
 
-/* line 67, ../scss/_global.scss */
+/* line 81, ../scss/_global.scss */
 .instructions-button {
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
 }
-/* line 74, ../scss/_global.scss */
+/* line 88, ../scss/_global.scss */
 .instructions-button svg path {
   fill: #9E9D24;
 }
 
-/* line 81, ../scss/_global.scss */
+/* line 95, ../scss/_global.scss */
 #templates {
   visibility: hidden;
   display: none;
 }
 
-/* line 86, ../scss/_global.scss */
+/* line 100, ../scss/_global.scss */
 .top,
 .search-macro {
   display: flex;
@@ -541,7 +562,7 @@ video.responsive-video {
   text-align: center;
 }
 
-/* line 101, ../scss/_global.scss */
+/* line 115, ../scss/_global.scss */
 .search-macro input {
   border-radius: 2px;
   width: 50%;
@@ -552,7 +573,7 @@ video.responsive-video {
   border: none;
 }
 
-/* line 115, ../scss/_global.scss */
+/* line 129, ../scss/_global.scss */
 .search-results-macro,
 .characters-macro {
   display: flex;
@@ -562,7 +583,7 @@ video.responsive-video {
   padding: 20px 40px;
 }
 
-/* line 129, ../scss/_global.scss */
+/* line 143, ../scss/_global.scss */
 .character {
   padding: 10px;
   font-family: "Georgia", "Apple Symbols", serif;
@@ -570,7 +591,7 @@ video.responsive-video {
   text-align: center;
 }
 
-/* line 137, ../scss/_global.scss */
+/* line 151, ../scss/_global.scss */
 .character-macro {
   border-radius: 2px;
   display: flex;
@@ -581,7 +602,7 @@ video.responsive-video {
   background-color: #FFFFFF;
   cursor: pointer;
 }
-/* line 149, ../scss/_global.scss */
+/* line 163, ../scss/_global.scss */
 .character-macro .character-micro {
   display: flex;
   align-items: center;
@@ -589,11 +610,11 @@ video.responsive-video {
   flex-direction: column;
   width: 100%;
 }
-/* line 158, ../scss/_global.scss */
+/* line 172, ../scss/_global.scss */
 .character-macro .character-micro .desc {
   text-align: center;
 }
-/* line 161, ../scss/_global.scss */
+/* line 175, ../scss/_global.scss */
 .character-macro .character-micro .code {
   font-size: 18px;
   font-family: Monaco, monospace;
@@ -606,12 +627,12 @@ video.responsive-video {
   text-align: center;
   cursor: pointer;
 }
-/* line 174, ../scss/_global.scss */
+/* line 188, ../scss/_global.scss */
 .character-macro .character-micro .code:selection {
   background-color: #FFFFFF;
 }
 
-/* line 192, ../scss/_global.scss */
+/* line 206, ../scss/_global.scss */
 input {
   -webkit-transition: background-color 0.1s ease-out;
   -moz-transition: background-color 0.1s ease-out;
@@ -620,24 +641,24 @@ input {
   transition: background-color 0.1s ease-out;
 }
 
-/* line 196, ../scss/_global.scss */
+/* line 210, ../scss/_global.scss */
 .hoverable {
   transition: box-shadow .25s;
   box-shadow: 0;
 }
 
-/* line 201, ../scss/_global.scss */
+/* line 215, ../scss/_global.scss */
 .hoverable:hover {
   transition: box-shadow .25s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 206, ../scss/_global.scss */
+/* line 220, ../scss/_global.scss */
 .oops {
   font-size: 28px;
 }
 
-/* line 209, ../scss/_global.scss */
+/* line 223, ../scss/_global.scss */
 footer {
   display: flex;
   align-items: center;
@@ -645,61 +666,78 @@ footer {
   padding: 10px 0;
 }
 
-/* line 216, ../scss/_global.scss */
+/* line 230, ../scss/_global.scss */
 .is-hidden {
   display: none;
 }
 
 @media (max-width: 1400px) {
-  /* line 221, ../scss/_global.scss */
+  /* line 235, ../scss/_global.scss */
   .character-macro {
     width: 25%;
   }
 }
 @media (max-width: 768px) {
-  /* line 226, ../scss/_global.scss */
+  /* line 240, ../scss/_global.scss */
   .characters-macro {
     padding: 20px 0;
   }
 
-  /* line 229, ../scss/_global.scss */
+  /* line 243, ../scss/_global.scss */
   .character-macro {
     width: 33.333%;
   }
 
-  /* line 233, ../scss/_global.scss */
+  /* line 247, ../scss/_global.scss */
   input.search {
     width: 80%;
   }
 }
 @media (max-width: 540px) {
-  /* line 239, ../scss/_global.scss */
+  /* line 253, ../scss/_global.scss */
   .character-macro {
     width: 50%;
   }
 }
 @media (max-width: 414px) {
-  /* line 245, ../scss/_global.scss */
+  /* line 259, ../scss/_global.scss */
   .character-macro {
     width: 100%;
     height: 170px;
   }
 
-  /* line 250, ../scss/_global.scss */
+  /* line 264, ../scss/_global.scss */
   .character {
     font-size: 50px;
   }
 
-  /* line 254, ../scss/_global.scss */
+  /* line 268, ../scss/_global.scss */
   .search-macro {
     padding: 0 5px;
   }
 
-  /* line 258, ../scss/_global.scss */
+  /* line 272, ../scss/_global.scss */
   input.search {
     width: 100%;
   }
 }
+/* line 1, ../scss/components/_loader.scss */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 7, ../scss/components/_loader.scss */
+.loader.hidden {
+  display: none;
+}
+/* line 10, ../scss/components/_loader.scss */
+.loader svg {
+  width: 150px;
+}
+
 /* General styles for the modal */
 /*
 Styles for the html/body for special modal where we want 3d effects
