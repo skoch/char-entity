@@ -1,3 +1,9 @@
+<a name="1.1.1"></a>
+# [1.1.1](https://github.com/skoch/char-entity/compare/1.1...1.1.1) (2016-09-15)
+
+### Bug Fixes
+* Google fonts http and https // favicon // regen index.html ([1ed238d](https://github.com/skoch/char-entity/commit/1ed238d))
+
 <a name="1.1"></a>
 # [1.1](https://github.com/skoch/char-entity/compare/1.0...1.1) (2016-09-15)
 
