@@ -1,3 +1,9 @@
+<a name="1.2"></a>
+# [1.2](https://github.com/skoch/char-entity/compare/1.1.1...1.2) (2016-09-16)
+
+### Features
+* Added Google Analytics ([4908d0e](https://github.com/skoch/char-entity/commit/4908d0e))
+
 <a name="1.1.1"></a>
 # [1.1.1](https://github.com/skoch/char-entity/compare/1.1...1.1.1) (2016-09-15)
 
